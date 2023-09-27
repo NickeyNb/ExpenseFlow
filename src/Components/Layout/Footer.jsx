@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="leftFooter hidden  w-1/5  md:inline-flex md:border-r md:border-black">
             <Link
               className="flex w-full items-center justify-center"
-              to="https://nickeynb.github.io/PortfolioNitin/"
+              to="https://nitin-portfolio-coral.vercel.app/"
               target="_blank"
             >
               <img className=" w-24 " src={logo} alt="Logo" />
@@ -23,7 +23,10 @@ const Footer = () => {
           </div>
           <div className="midFooter border-r border-solid border-black text-center md:flex md:w-3/5 md:flex-col md:items-center md:justify-center">
             <p>"Expense-Flow – it's an experience" </p>
-            <p>Design with love - NB </p>
+            <p>
+              Design with <span className="text-2xl text-red-600">❤</span> -{" "}
+              <Link to={"https://nitin-portfolio-coral.vercel.app/"}> NB </Link>
+            </p>
             <p>Copyright © 2023 | All Rights Reserved</p>
           </div>
           <div className="rightFooter mb-2 flex justify-center md:w-1/5">

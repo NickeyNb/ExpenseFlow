@@ -87,7 +87,7 @@ const Header = () => {
 
           <div className="  flex space-x-12 text-xl font-bold md:text-lg">
             <NavLink
-              to={"https://nickeynb.github.io/PortfolioNitin/"}
+              to={"https://nitin-portfolio-coral.vercel.app/"}
               target="_blank"
             >
               Expense-Flow

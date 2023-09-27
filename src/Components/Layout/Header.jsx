@@ -8,6 +8,7 @@ import { LuSearch } from "react-icons/lu";
 import { useDispatch, useSelector } from "react-redux";
 import { isAuthFalse } from "../../redux/features/authSlice";
 import { isLoadFalse, isLoadTrue } from "../../redux/features/loadSlice";
+import { server } from "../../App";
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
@@ -22,7 +23,7 @@ const Header = () => {
   const logoutHandler = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.get("http://localhost:8080/api/v1/users/logout", {
+      const res = await axios.get(`${server}/users/logout`, {
         withCredentials: true,
       });
       const isSucc = res.data.success;

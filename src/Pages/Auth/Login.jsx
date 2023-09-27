@@ -59,7 +59,7 @@ const Login = () => {
               <div className="loginDiv">
                 {/* right login */}
                 <div className="rightLogin space-y-1">
-                  <div className="heading flex justify-between border-b border-solid border-rose-400 bg-rose-200 px-2 py-4">
+                  <div className="heading flex justify-between border-b border-solid border-rose-400 bg-teal-600 px-2 py-4">
                     <div className="space-y-2 font-semibold">
                       <p>Created by: Nb31</p>
                       <p>Version: 1.0</p>
@@ -105,7 +105,7 @@ const Login = () => {
                     </div>
                     <div>
                       <button
-                        className="mt-1 w-full rounded bg-rose-300 py-2 text-lg font-bold text-slate-100"
+                        className="mt-1 w-full rounded bg-teal-700 py-2 text-lg font-bold text-slate-100 hover:bg-teal-800"
                         type="submit"
                       >
                         Login

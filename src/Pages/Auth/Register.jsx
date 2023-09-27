@@ -56,24 +56,22 @@ const Register = () => {
               <div className="about">
                 <p className="mb-4 text-center">
                   Welcome to{" "}
-                  <span className="text-lg font-bold">Expense-Flow</span>
+                  <span className="text-lg font-bold text-teal-700">
+                    Expense-Flow
+                  </span>
                 </p>
               </div>
               <div className="registerDiv">
                 {/* right register */}
                 <div className="rightRegister space-y-1">
-                  <div className="heading flex justify-between border-b border-solid border-rose-400 bg-rose-200 px-2 py-4">
+                  <div className="heading flex justify-between  bg-teal-600 px-2 py-4">
                     <div className="space-y-2 font-semibold">
                       <p>Created by: Nb31</p>
                       <p>Version: 1.0</p>
                       <p>Created on: September 17, 2023</p>
                     </div>
-                    <div className="w-28 border border-solid border-rose-400">
-                      <img
-                        className="border border-solid border-rose-400"
-                        src={register}
-                        alt="hi img"
-                      />
+                    <div className="w-28  ">
+                      <img className="" src={register} alt="hi img" />
                     </div>
                   </div>
                   <form
@@ -126,7 +124,7 @@ const Register = () => {
                     {/* Button  */}
                     <div className="">
                       <button
-                        className="mt-1 w-full rounded bg-rose-300 py-2 text-lg font-bold text-slate-100"
+                        className="mt-1 w-full rounded bg-teal-600 py-2 text-lg font-bold text-slate-100 hover:bg-teal-700"
                         type="submit"
                       >
                         Register

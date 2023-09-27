@@ -28,12 +28,9 @@ function App() {
   const getMyself = async () => {
     dispatch(isLoadTrue());
     try {
-      const res = await axios.get(
-        "http://localhost:8080/api/v1/users/get-my-profile",
-        {
-          withCredentials: true,
-        },
-      );
+      const res = await axios.get(`${server}/users/get-my-profile`, {
+        withCredentials: true,
+      });
       const succ = res.data.success;
       if (succ) {
         dispatch(isLoadFalse());

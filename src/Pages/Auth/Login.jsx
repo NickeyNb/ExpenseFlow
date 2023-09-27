@@ -40,7 +40,7 @@ const Login = () => {
       }
     } catch (error) {
       dispatch(isAuthFalse());
-      toast.error("Someging wroing");
+      toast.error("Something wrong");
     }
   };
   return (

@@ -64,22 +64,34 @@ const Header = () => {
               <div className="absolute -left-4 top-9 z-50  border-rose-400 bg-teal-700 text-slate-100 ease-in-out md:hidden">
                 <ul className="flex w-screen justify-around py-3 font-semibold">
                   <li>
-                    <NavLink className="text-lg" to={"/"}>
+                    <NavLink
+                      className="text-xl font-semibold tracking-normal"
+                      to={"/"}
+                    >
                       Dashboard
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink className="text-lg" to={"/income"}>
+                    <NavLink
+                      className="text-xl font-semibold tracking-normal"
+                      to={"/income"}
+                    >
                       Income
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink className="text-lg" to={"/expense"}>
+                    <NavLink
+                      className="text-xl font-semibold tracking-normal"
+                      to={"/expense"}
+                    >
                       Expense
                     </NavLink>
                   </li>
                   <li className="">
-                    <NavLink className="text-lg" to={"/history"}>
+                    <NavLink
+                      className="text-xl font-semibold tracking-normal"
+                      to={"/history"}
+                    >
                       History
                     </NavLink>
                   </li>

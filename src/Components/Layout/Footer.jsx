@@ -9,7 +9,7 @@ import {
 import logo from "../../assets/mainLogo.png";
 const Footer = () => {
   return (
-    <main>
+    <main className="bg-slate-200">
       <section className="footerSection ">
         <div className="footerDiv flex flex-col-reverse border-t border-solid border-gray-300 py-4 md:flex md:w-full md:flex-row">
           <div className="leftFooter hidden  w-1/5  md:inline-flex md:border-r md:border-black">
@@ -23,7 +23,8 @@ const Footer = () => {
           </div>
           <div className="midFooter border-r border-solid border-black text-center md:flex md:w-3/5 md:flex-col md:items-center md:justify-center">
             <p className="text-lg font-semibold">
-              "Expense-Flow – it's an experience"{" "}
+              <span className="text-blue-500">"Expense-Flow</span> – it's an
+              experience"{" "}
             </p>
             <p>
               Design with <span className="text-2xl text-red-600">❤</span> -{" "}

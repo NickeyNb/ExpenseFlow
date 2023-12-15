@@ -47,25 +47,25 @@ const Header = () => {
 
   return (
     <main>
-      <section className="headerSection sticky  w-full  bg-white shadow-md shadow-gray-400">
-        <div className="headerDiv flex items-center justify-between px-4 py-3">
+      <section className=" sticky w-full  bg-slate-200   shadow-lg shadow-gray-400">
+        <div className=" flex items-center justify-between px-4 py-3">
           <div className="relative md:hidden">
             <div
               className="flex space-x-4 text-2xl font-bold  "
               onClick={showMenu}
             >
               {menu ? (
-                <RiCloseLine />
+                <RiCloseLine className="cursor-pointer" />
               ) : (
                 <RxHamburgerMenu className="cursor-pointer" />
               )}
             </div>
             {menu ? (
-              <div className="absolute -left-4 top-9 z-50  border-rose-400 bg-teal-700 text-slate-100 ease-in-out md:hidden">
+              <div className="absolute -left-4 top-9 z-50  border-blue-600 bg-blue-500 text-slate-100 ease-in-out md:hidden">
                 <ul className="flex w-screen justify-around py-3 font-semibold">
                   <li>
                     <NavLink
-                      className="text-xl font-semibold tracking-normal"
+                      className="text-xl  tracking-normal hover:text-black"
                       to={"/"}
                     >
                       Dashboard
@@ -73,7 +73,7 @@ const Header = () => {
                   </li>
                   <li>
                     <NavLink
-                      className="text-xl font-semibold tracking-normal"
+                      className="text-xl  tracking-normal hover:text-black"
                       to={"/income"}
                     >
                       Income
@@ -81,7 +81,7 @@ const Header = () => {
                   </li>
                   <li>
                     <NavLink
-                      className="text-xl font-semibold tracking-normal"
+                      className="text-xl  tracking-normal hover:text-black"
                       to={"/expense"}
                     >
                       Expense
@@ -89,7 +89,7 @@ const Header = () => {
                   </li>
                   <li className="">
                     <NavLink
-                      className="text-xl font-semibold tracking-normal"
+                      className="text-xl tracking-normal hover:text-black"
                       to={"/history"}
                     >
                       History
@@ -102,7 +102,7 @@ const Header = () => {
 
           <div className="  flex space-x-12 text-xl font-bold md:text-lg">
             <NavLink
-              className={"font-bold tracking-normal text-teal-800 md:text-xl"}
+              className={"font-bold tracking-normal text-blue-600 md:text-xl"}
               to={"https://nitin-portfolio-coral.vercel.app/"}
               target="_blank"
             >
@@ -112,16 +112,25 @@ const Header = () => {
           <nav className="midHeader hidden md:inline-block md:w-3/5">
             <ul className="flex w-full justify-between text-lg">
               <li>
-                <NavLink to={"/"}>Dashboard</NavLink>
+                <NavLink to={"/"} className={"hover:text-blue-600"}>
+                  Dashboard
+                </NavLink>
               </li>
               <li>
-                <NavLink to={"/income"}>Income</NavLink>
+                <NavLink to={"/income"} className={"hover:text-blue-600"}>
+                  Income
+                </NavLink>
               </li>
               <li>
-                <NavLink to={"/expense"}>Expense</NavLink>
+                <NavLink to={"/expense"} className={"hover:text-blue-600"}>
+                  Expense
+                </NavLink>
               </li>
               <li className="">
-                <NavLink className="nav-NavLink" to={"/history"}>
+                <NavLink
+                  className="nav-NavLink hover:text-blue-600"
+                  to={"/history"}
+                >
                   History
                 </NavLink>
               </li>
@@ -130,13 +139,13 @@ const Header = () => {
           <div className="rightHeader">
             {auth ? (
               <button
-                className="rounded-lg border-2 bg-teal-700 px-2 py-1  font-bold text-slate-100 hover:bg-teal-800"
+                className="rounded-lg border-2 bg-blue-500 px-3 py-1  font-bold text-slate-100 hover:bg-blue-600"
                 onClick={logoutHandler}
               >
                 Logout
               </button>
             ) : (
-              <button className="rounded-lg border-2 bg-teal-700 px-2 py-1  font-bold text-slate-100 hover:bg-teal-800">
+              <button className="rounded-lg border-2 bg-blue-500 px-3 py-1  font-bold text-slate-100 hover:bg-blue-600">
                 Login
               </button>
             )}

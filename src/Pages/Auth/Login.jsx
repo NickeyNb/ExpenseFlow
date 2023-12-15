@@ -45,35 +45,27 @@ const Login = () => {
   };
   return (
     <Layout>
-      <main>
-        <section className="loginBody flex items-center justify-center md:mb-4">
+      <main className="bg-gray-100">
+        <section className=" pd:mb-4 flex items-center justify-center">
           <div className="border-1 m-4 flex min-h-[70vh] w-full  max-w-md items-center justify-center rounded  pt-4">
             <div className="w-full">
-              <div className="about">
+              <div>
                 <p className="mb-4 text-center">
                   Welcome to{" "}
-                  <span className="text-lg font-bold">Expense-Flow</span>
+                  <span className="text-lg font-bold text-blue-500 underline">
+                    Expense-Flow
+                  </span>
                 </p>
               </div>
               {/* left login */}
               <div className="loginDiv">
                 {/* right login */}
-                <div className="rightLogin space-y-1">
-                  <div className="heading flex justify-between border-b border-solid border-rose-400 bg-teal-600 px-2 py-4">
-                    <div className="space-y-2 font-semibold">
-                      <p>Created by: Nb31</p>
-                      <p>Version: 1.0</p>
-                      <p>Created on: September 17, 2023</p>
-                    </div>
-                    <div className="w-28 ">
-                      <img className="" src={login} alt="hi img" />
-                    </div>
-                  </div>
+                <div className=" space-y-1  bg-white">
                   <form
-                    className=" space-y-3 border border-solid border-gray-400 px-3 py-2"
+                    className=" space-y-3 rounded-lg border-solid border-gray-400 px-3 py-2 shadow-lg shadow-slate-500"
                     onSubmit={loginHandler}
                   >
-                    <div className="fill border-b border-black">
+                    <div className=" border-b border-black">
                       <input
                         className="w-full  border-none px-1 py-1 text-lg outline-none"
                         type="email"
@@ -85,7 +77,7 @@ const Login = () => {
                         }}
                       />
                     </div>
-                    <div className="fill eye flex border-b border-black">
+                    <div className=" eye flex border-b border-black">
                       <input
                         className="w-full  border-none px-1 py-1 text-lg outline-none"
                         type={eye ? "text" : "password"}
@@ -105,16 +97,16 @@ const Login = () => {
                     </div>
                     <div>
                       <button
-                        className="mt-1 w-full rounded bg-teal-700 py-2 text-lg font-bold text-slate-100 hover:bg-teal-800"
+                        className="mt-1 w-full rounded-lg bg-blue-500 py-2 text-lg font-bold text-slate-100 outline-blue-600 hover:bg-blue-600"
                         type="submit"
                       >
                         Login
                       </button>
                     </div>
-                    <div className="notUser mt-2 flex justify-end">
-                      <p className="font-semibold">New user ? </p>
+                    <div className=" mt-2 flex justify-end">
+                      <p>New user ? </p>
                       <Link
-                        className="font-semibold text-blue-700"
+                        className="text-gray-500 underline outline-none"
                         to={"/register"}
                       >
                         Register

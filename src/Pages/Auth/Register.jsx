@@ -49,36 +49,26 @@ const Register = () => {
 
   return (
     <Layout>
-      <main>
-        <section className="registerBody flex items-center justify-center  md:mb-4">
+      <main className="bg-gray-100">
+        <section className=" pd:mb-4 flex items-center justify-center  bg-gray-100">
           <div className="border-1 m-4 flex  min-h-[70vh] w-full  max-w-md items-center   justify-center  rounded  pt-4">
             <div className="w-full">
-              <div className="about">
+              <div>
                 <p className="mb-4 text-center">
                   Welcome to{" "}
-                  <span className="text-lg font-bold text-teal-700">
+                  <span className="text-lg font-bold text-blue-500 underline">
                     Expense-Flow
                   </span>
                 </p>
               </div>
-              <div className="registerDiv">
+              <div className="bg-white">
                 {/* right register */}
-                <div className="rightRegister space-y-1">
-                  <div className="heading flex justify-between  bg-teal-600 px-2 py-4">
-                    <div className="space-y-2 font-semibold">
-                      <p>Created by: Nb31</p>
-                      <p>Version: 1.0</p>
-                      <p>Created on: September 17, 2023</p>
-                    </div>
-                    <div className="w-28  ">
-                      <img className="" src={register} alt="hi img" />
-                    </div>
-                  </div>
+                <div className=" space-y-1">
                   <form
-                    className=" space-y-3 border border-solid border-gray-400 px-3 py-2"
+                    className=" space-y-3 rounded-lg border-solid border-gray-300 px-3 py-2 shadow-lg shadow-slate-500"
                     onSubmit={registerHandler}
                   >
-                    <div className="fill border-b border-black">
+                    <div className=" border-b border-black">
                       <input
                         className="w-full  border-none px-1 py-1 text-lg outline-none"
                         type="text"
@@ -90,7 +80,7 @@ const Register = () => {
                         }}
                       />
                     </div>
-                    <div className="fill border-b border-black">
+                    <div className=" border-b border-black">
                       <input
                         className="w-full border-none px-1 py-1 text-lg outline-none"
                         type="email"
@@ -102,7 +92,7 @@ const Register = () => {
                         }}
                       />
                     </div>
-                    <div className="fill eye flex cursor-pointer border-b border-black">
+                    <div className=" eye flex cursor-pointer border-b border-black">
                       <input
                         className="w-full border-none px-1 py-1 text-lg outline-none"
                         type={eye ? "text" : "password"}
@@ -124,16 +114,16 @@ const Register = () => {
                     {/* Button  */}
                     <div className="">
                       <button
-                        className="mt-1 w-full rounded bg-teal-600 py-2 text-lg font-bold text-slate-100 hover:bg-teal-700"
+                        className="mt-1 w-full  rounded-lg bg-blue-500 py-2 text-lg font-bold text-slate-100 outline-blue-600 hover:bg-blue-600"
                         type="submit"
                       >
                         Register
                       </button>
                     </div>
-                    <div className="ifUser mt-2 flex justify-end">
-                      <p className="font-semibold">Already a user? </p>
+                    <div className=" mt-2 flex justify-end">
+                      <p className="">Already a user? </p>
                       <Link
-                        className="font-semibold text-blue-700"
+                        className=" text-gray-500 underline outline-none"
                         to={"/login"}
                       >
                         Login

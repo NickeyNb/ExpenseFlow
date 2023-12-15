@@ -23,7 +23,7 @@ Check out the live demo of Expense Flow [here](https://expense-flow.vercel.app/)
 
 To run Expense Flow locally, follow these steps:
 
-1. Clone this repository: `git clone https://github.com/your-username/expense-flow.git`
+1. Clone this repository: `git clone https://github.com/NickeyNb/ExpenseFlow.git`
 2. Install dependencies: `npm install`
 3. Start the development server: `npm start`
 
@@ -37,8 +37,8 @@ To run Expense Flow locally, follow these steps:
 ## Technologies Used
 
 - Frontend: React, Redux
-- Backend: Node.js, Express.js, MongoDB 
-- Hosting: Vercel (frontend), Heroku (backend)
+- Backend: Node.js, Express.js, MongoDB
+- Hosting: Vercel (frontend), Render (backend)
 
 ## License
 

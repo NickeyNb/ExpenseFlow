@@ -5,7 +5,7 @@ import Layout from "../Components/Layout/Layout";
 const PageNotFound = () => {
   return (
     <Layout>
-      <main>
+      <main className="bg-gray-100">
         <section className="flex min-h-[70vh] flex-col items-center justify-center">
           <h1 className="text-6xl font-bold text-red-600">404</h1>
           <h2 className="my-4 text-2xl font-semibold text-gray-800">

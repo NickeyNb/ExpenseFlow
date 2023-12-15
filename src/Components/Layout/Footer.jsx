@@ -21,7 +21,7 @@ const Footer = () => {
               <img className=" w-24 " src={logo} alt="Logo" />
             </Link>
           </div>
-          <div className="midFooter border-r border-solid border-black text-center md:flex md:w-3/5 md:flex-col md:items-center md:justify-center">
+          <div className="midFooter border-solid border-black text-center md:flex md:w-3/5 md:flex-col md:items-center md:justify-center md:border-r">
             <p className="text-lg font-semibold">
               <span className="text-blue-500">"Expense-Flow</span> – it's an
               experience"{" "}
@@ -37,23 +37,23 @@ const Footer = () => {
             <div className="flex space-x-4  text-2xl font-bold md:flex-col md:justify-center md:space-x-0 md:space-y-2 md:text-3xl">
               <Link to="https://www.linkedin.com/in/nitin-bisht-3998091b6/">
                 <i>
-                  <AiFillWechat className="hover:text-teal-700" />{" "}
+                  <AiFillWechat className="hover:text-blue-600" />{" "}
                 </i>
               </Link>
               <Link to="https://www.linkedin.com/in/nitin-bisht-3998091b6/">
                 <i>
-                  <AiFillLinkedin className="hover:text-teal-700" />
+                  <AiFillLinkedin className="hover:text-blue-600" />
                 </i>
               </Link>
               <Link to="https://github.com/NickeyNb">
                 <i>
-                  <AiFillGithub className="hover:text-teal-700" />{" "}
+                  <AiFillGithub className="hover:text-blue-600" />{" "}
                 </i>
               </Link>
 
               <Link to="https://github.com/NickeyNb">
                 <i>
-                  <AiFillInstagram className="hover:text-teal-700" />{" "}
+                  <AiFillInstagram className="hover:text-blue-600" />{" "}
                 </i>
               </Link>
             </div>

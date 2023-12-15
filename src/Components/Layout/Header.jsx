@@ -48,7 +48,7 @@ const Header = () => {
   return (
     <main>
       <section className=" sticky w-full  bg-slate-200   shadow-lg shadow-gray-400">
-        <div className=" flex items-center justify-between px-4 py-3">
+        <div className=" flex items-center justify-between px-4 py-4">
           <div className="relative md:hidden">
             <div
               className="flex space-x-4 text-2xl font-bold  "
@@ -61,11 +61,11 @@ const Header = () => {
               )}
             </div>
             {menu ? (
-              <div className="absolute -left-4 top-9 z-50  border-blue-600 bg-blue-500 text-slate-100 ease-in-out md:hidden">
-                <ul className="flex w-screen justify-around py-3 font-semibold">
+              <div className="absolute -left-4 top-9 z-50 rounded-lg  border-blue-600 bg-slate-200  shadow-lg shadow-slate-500 ease-in-out md:hidden">
+                <ul className="flex w-screen flex-col justify-around gap-4 py-4 text-center">
                   <li>
                     <NavLink
-                      className="text-xl  tracking-normal hover:text-black"
+                      className="text-xl  tracking-normal hover:text-blue-600"
                       to={"/"}
                     >
                       Dashboard
@@ -73,7 +73,7 @@ const Header = () => {
                   </li>
                   <li>
                     <NavLink
-                      className="text-xl  tracking-normal hover:text-black"
+                      className="text-xl  tracking-normal hover:text-blue-600"
                       to={"/income"}
                     >
                       Income
@@ -81,7 +81,7 @@ const Header = () => {
                   </li>
                   <li>
                     <NavLink
-                      className="text-xl  tracking-normal hover:text-black"
+                      className="text-xl  tracking-normal hover:text-blue-600"
                       to={"/expense"}
                     >
                       Expense
@@ -89,7 +89,7 @@ const Header = () => {
                   </li>
                   <li className="">
                     <NavLink
-                      className="text-xl tracking-normal hover:text-black"
+                      className="text-xl tracking-normal hover:text-blue-600"
                       to={"/history"}
                     >
                       History
@@ -103,8 +103,7 @@ const Header = () => {
           <div className="  flex space-x-12 text-xl font-bold md:text-lg">
             <NavLink
               className={"font-bold tracking-normal text-blue-600 md:text-xl"}
-              to={"https://nitin-portfolio-coral.vercel.app/"}
-              target="_blank"
+              to={"/"}
             >
               Expense-Flow
             </NavLink>

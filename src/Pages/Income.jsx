@@ -124,8 +124,8 @@ const Income = () => {
 
   return (
     <Layout>
-      <main>
-        <section className="mb-4  min-h-[80vh] w-full">
+      <main className="bg-gray-100">
+        <section className="min-h-[80vh]  w-full pb-4">
           <div className="flex flex-col ">
             <div className="rounded-md px-2 py-2 text-center shadow-md">
               <h1 className="mb-1 text-2xl font-semibold">Total Income</h1>

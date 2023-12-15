@@ -51,8 +51,8 @@ const History = () => {
 
   return (
     <Layout>
-      <main>
-        <section className="mb-4 min-h-[80vh] w-full">
+      <main className="bg-gray-100">
+        <section className="min-h-[80vh] w-full pb-4">
           <div className="w-full p-4">
             <h1 className="text-center text-2xl font-semibold">History</h1>
             {transactionHistory.length > 0 ? (

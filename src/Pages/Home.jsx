@@ -113,8 +113,8 @@ const Home = () => {
 
   return (
     <Layout>
-      <main>
-        <section className="mb-4 mt-8 min-h-[80vh]">
+      <main className="bg-gray-100">
+        <section className="mt-8 min-h-[80vh] pb-4">
           <div className="flex flex-col">
             <div className="flex flex-col">
               <div className="grid md:grid-cols-2">
